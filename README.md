@@ -29,6 +29,7 @@ This project aims to provide developers with easily accessible cheat sheets for 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v14 or later recommended)
 - npm (comes with Node.js)
 
@@ -97,6 +98,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+Your Name - Ronald Spratley - ronnie8890@gmail.com
 
-Project Link: [https://github.com/your-username/frontend-development-cheat-sheet](https://github.com/your-username/frontend-development-cheat-sheet)
+Project Link: [https://github.com/RonnieSJR/frontend-development-cheat-sheet](https://github.com/your-username/frontend-development-cheat-sheet)

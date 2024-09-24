@@ -1,5 +1,10 @@
 ## 2024-09-24
 
+- Update contact info and project link in README.md
+
+
+## 2024-09-24
+
 - Fix typo in changelog.
 
 ## 2024-09-24
