@@ -1,8 +1,10 @@
 ## 2024-09-24
 
-- Update CHANGELOG to accurately reflect project history
+- Fix typo in changelog.
 
-# Changelog
+## 2024-09-24
+
+- Update CHANGELOG to accurately reflect project history
 
 ## 2024-09-24
 
