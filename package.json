@@ -1,15 +1,23 @@
 {
   "name": "cheat-sheet-website",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "repopack": "npx repopack -c repopack/repopack.config.json",
+    "start": "node src/server/server.js",
+    "dev": "nodemon src/server/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "repopack": "^0.1.37"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
   }
 }

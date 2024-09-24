@@ -1,0 +1,161 @@
+/**
+ * Main Stylesheet
+ * 
+ * This stylesheet defines the core styles for the Frontend Development Cheat Sheet website.
+ * It includes styles for the body, container, headings, and cheatsheet grid layout.
+ *
+ * @author Ronald Spratley <https://github.com/RonnieSJR>
+ * @version 0.1.0
+ * @license MIT
+ */
+
+/* Base styles
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Use a comfortable line height for readability.
+ * 3. Remove default body margin.
+ * 4. Add some padding to the body.
+ * 5. Set a dark background color for the body.
+ */
+body {
+  font-family: Arial, sans-serif; /* 1 */
+  line-height: 1.6; /* 2 */
+  margin: 0; /* 3 */
+  padding: 20px; /* 4 */
+  background-color: #010101; /* 5 */
+}
+
+/* Layout
+   ========================================================================== */
+
+/**
+ * Main container
+ * 
+ * 1. Limit the maximum width of the container.
+ * 2. Center the container horizontally.
+ * 3. Add padding inside the container.
+ * 4. Set a slightly lighter background color than the body.
+ * 5. Round the corners of the container.
+ * 6. Add a subtle shadow for depth.
+ */
+.container {
+  max-width: 800px; /* 1 */
+  margin: auto; /* 2 */
+  padding: 20px 20px 70px 20px; /* 3 */
+  background-color: #121212; /* 4 */
+  border-radius: 5px; /* 5 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 6 */
+}
+
+/**
+ * Header
+ * 
+ * 1. Set text color to white for contrast against dark background.
+ * 2. Center-align the header text.
+ * 3. Add some padding to the header.
+ * 4. Set a slightly darker background color than the body.
+ * 5. Add a subtle shadow for depth.
+ */
+header {
+  color: white; /* 1 */
+  text-align: center; /* 2 */
+  padding: 10px; /* 3 */
+  background-color: #010101; /* 4 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 5 */
+}
+
+/**
+ * Footer
+ *
+ * 1. Set text color to white for contrast against dark background.
+ * 2. Center-align the footer text.
+ * 3. Add some padding to the footer.
+ * 4. Set a slightly darker background color than the body.
+ * 5. Push the footer to the bottom of the page.
+ * 6. Ensure the footer spans the full width of the viewport.
+ * 7. Set a fixed height for the footer.
+ * 8. Align the text vertically within the footer.
+ * 9. Ensure the footer doesn't overlap with page content.
+ */
+footer {
+  color: white; /* 1 */
+  text-align: center; /* 2 */
+  padding: 10px; /* 3 */
+  background-color: #010101; /* 4 */
+  position: fixed; /* 5 */
+  bottom: 0; /* 5 */
+  left: 0; /* 6 */
+  right: 0; /* 6 */
+  height: 50px; /* 7 */
+  display: flex; /* 8 */
+  align-items: center; /* 8 */
+  justify-content: center; /* 8 */
+  box-sizing: border-box; /* 9 */
+}
+
+/* Typography
+   ========================================================================== */
+
+/**
+ * Main heading
+ * 
+ * 1. Set text color to beige for contrast against dark background.
+ * 2. Center-align the heading text.
+ */
+h1 {
+  color: beige; /* 1 */
+  text-align: center; /* 2 */
+}
+
+/* Components
+   ========================================================================== */
+
+/**
+ * Cheatsheet grid
+ * 
+ * 1. Use CSS Grid for layout.
+ * 2. Create responsive columns that adjust based on available space.
+ * 3. Add gap between grid items.
+ * 4. Add some top margin for spacing from preceding elements.
+ */
+.cheatsheet-grid {
+  display: grid; /* 1 */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* 2 */
+  gap: 20px; /* 3 */
+  margin-top: 20px; /* 4 */
+}
+
+/**
+ * Cheatsheet item
+ * 
+ * 1. Set light background color for contrast.
+ * 2. Add a border to define the item boundaries.
+ * 3. Round the corners of the item.
+ * 4. Add internal padding.
+ * 5. Center-align the text content.
+ * 6. Change cursor to pointer on hover.
+ * 7. Add a smooth transition effect for hover state.
+ */
+.cheatsheet-item {
+  background-color: beige; /* 1 */
+  border: 2px solid black; /* 2 */
+  border-radius: 5px; /* 3 */
+  padding: 15px; /* 4 */
+  text-align: center; /* 5 */
+  cursor: pointer; /* 6 */
+  transition: background-color 0.3s; /* 7 */
+}
+
+/**
+ * Cheatsheet item hover state
+ * 
+ * 1. Change background color when hovering over the item.
+ */
+.cheatsheet-item:hover {
+  background-color: burlywood; /* 1 */
+}
