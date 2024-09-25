@@ -98,6 +98,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - Ronald Spratley - ronnie8890@gmail.com
+Your Name - Ronald Spratley - ron@spratley.dev
 
 Project Link: [https://github.com/RonnieSJR/frontend-development-cheat-sheet](https://github.com/your-username/frontend-development-cheat-sheet)

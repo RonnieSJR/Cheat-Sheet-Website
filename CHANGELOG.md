@@ -1,3 +1,8 @@
+## 2024-09-25
+
+- Update contact email in README.md
+
+
 ## 2024-09-24
 
 - Update contact info and project link in README.md
