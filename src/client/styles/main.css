@@ -41,7 +41,7 @@ body {
  * 6. Add a subtle shadow for depth.
  */
 .container {
-  max-width: 800px; /* 1 */
+  max-width: 2000px; /* 1 */
   margin: auto; /* 2 */
   padding: 20px 20px 70px 20px; /* 3 */
   background-color: #121212; /* 4 */

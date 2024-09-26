@@ -6,14 +6,759 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>HTML Cheat Sheet</title>
+    <!-- Main stylesheet -->
     <link
       rel="stylesheet"
       href="../styles/main.css" />
+    <!-- Cheatsheet stylesheet -->
+    <link
+      rel="stylesheet"
+      href="../styles/cheatsheet.css" />
+    <style>
+     
+    </style>
   </head>
   <body>
-    <h1>HTML Cheat Sheet</h1>
-    <p>
-      <a href="/">Go Home</a>
-    </p>
+    <div class="container">
+      <header>
+        <h1>HTML Cheat Sheet</h1>
+      </header>
+      <main class="cheat-sheet">
+        <div class="section">
+          <h2>Document Structure</h2>
+          <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+          <p class="tag-description">
+            This is the basic structure of an HTML document.
+            It includes the DOCTYPE declaration, html, head,
+            and body elements.
+          </p>
+          <p class="use-case">
+            Use this structure as the starting point for
+            every HTML document you create.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Text Elements</h2>
+          <ul>
+            <li>
+              <code>&lt;h1&gt;</code> to
+              <code>&lt;h6&gt;</code>
+              <span class="tag-explanation">Headings</span>
+              <p class="tag-description">
+                Define six levels of section headings in
+                HTML. &lt;h1&gt; is the highest (most
+                important) level and &lt;h6&gt; is the
+                lowest.
+              </p>
+              <p class="use-case">
+                Use for structuring content and improving
+                SEO. Maintain a logical hierarchy (don't
+                skip levels).
+              </p>
+            </li>
+            <li>
+              <code>&lt;p&gt;</code>
+              <span class="tag-explanation">Paragraph</span>
+              <p class="tag-description">
+                Defines a paragraph of text.
+              </p>
+              <p class="use-case">
+                Use for blocks of text, such as paragraphs
+                in articles, blog posts, or general content.
+              </p>
+            </li>
+            <li>
+              <code>&lt;strong&gt;</code>
+              <span class="tag-explanation"
+                >Strong importance</span
+              >
+              <p class="tag-description">
+                Indicates strong importance, seriousness, or
+                urgency for its contents.
+              </p>
+              <p class="use-case">
+                Use to emphasize important words or phrases
+                within text. Typically rendered in bold.
+              </p>
+            </li>
+            <li>
+              <code>&lt;em&gt;</code>
+              <span class="tag-explanation"
+                >Emphasized text</span
+              >
+              <p class="tag-description">
+                Marks text that has stress emphasis.
+              </p>
+              <p class="use-case">
+                Use for words that have a stressed emphasis
+                compared to surrounding text. Typically
+                rendered in italics.
+              </p>
+            </li>
+            <li>
+              <code>&lt;br&gt;</code>
+              <span class="tag-explanation"
+                >Line break</span
+              >
+              <p class="tag-description">
+                Produces a line break in text.
+              </p>
+              <p class="use-case">
+                Use sparingly to create line breaks, such as
+                in addresses or poetry. Avoid for spacing in
+                layouts.
+              </p>
+            </li>
+            <li>
+              <code>&lt;hr&gt;</code>
+              <span class="tag-explanation"
+                >Horizontal rule</span
+              >
+              <p class="tag-description">
+                Represents a thematic break between
+                paragraph-level elements.
+              </p>
+              <p class="use-case">
+                Use to separate content sections or to
+                indicate a change in topic within a section.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Links and Media</h2>
+          <ul>
+            <li>
+              <code>&lt;a href="url"&gt;</code>
+              <span class="tag-explanation">Hyperlink</span>
+              <p class="tag-description">
+                Creates a hyperlink to web pages, files,
+                email addresses, or anything else a URL can
+                address.
+              </p>
+              <p class="use-case">
+                Use for navigation within a site, linking to
+                external resources, or creating clickable
+                text/images.
+              </p>
+            </li>
+            <li>
+              <code
+                >&lt;img src="url"
+                alt="description"&gt;</code
+              >
+              <span class="tag-explanation">Image</span>
+              <p class="tag-description">
+                Embeds an image into the document.
+              </p>
+              <p class="use-case">
+                Use to display images in your content.
+                Always include descriptive alt text for
+                accessibility.
+              </p>
+            </li>
+            <li>
+              <code>&lt;video src="url"&gt;</code>
+              <span class="tag-explanation">Video</span>
+              <p class="tag-description">
+                Embeds a media player for video playback.
+              </p>
+              <p class="use-case">
+                Use to include video content in your web
+                pages. Consider adding controls and poster
+                attributes.
+              </p>
+            </li>
+            <li>
+              <code>&lt;audio src="url"&gt;</code>
+              <span class="tag-explanation">Audio</span>
+              <p class="tag-description">
+                Embeds sound content in documents.
+              </p>
+              <p class="use-case">
+                Use for audio playback on web pages, such as
+                music or podcasts.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Lists</h2>
+          <ul>
+            <li>
+              <code>&lt;ul&gt;</code>
+              <span class="tag-explanation"
+                >Unordered list</span
+              >
+              <p class="tag-description">
+                Represents an unordered list of items.
+              </p>
+              <p class="use-case">
+                Use for lists where the order of items
+                doesn't matter, typically rendered with
+                bullet points.
+              </p>
+            </li>
+            <li>
+              <code>&lt;ol&gt;</code>
+              <span class="tag-explanation"
+                >Ordered list</span
+              >
+              <p class="tag-description">
+                Represents an ordered list of items.
+              </p>
+              <p class="use-case">
+                Use for lists where the order of items is
+                meaningful, typically rendered with numbers.
+              </p>
+            </li>
+            <li>
+              <code>&lt;li&gt;</code>
+              <span class="tag-explanation">List item</span>
+              <p class="tag-description">
+                Represents an item in a list.
+              </p>
+              <p class="use-case">
+                Use within &lt;ul&gt; or &lt;ol&gt; elements
+                to define individual list items.
+              </p>
+            </li>
+            <li>
+              <code>&lt;dl&gt;</code>
+              <span class="tag-explanation"
+                >Description list</span
+              >
+              <p class="tag-description">
+                Represents a description list.
+              </p>
+              <p class="use-case">
+                Use for a list of terms and their associated
+                descriptions, such as a glossary.
+              </p>
+            </li>
+            <li>
+              <code>&lt;dt&gt;</code>
+              <span class="tag-explanation"
+                >Description term</span
+              >
+              <p class="tag-description">
+                Specifies a term in a description list.
+              </p>
+              <p class="use-case">
+                Use within a &lt;dl&gt; to define the term
+                being described.
+              </p>
+            </li>
+            <li>
+              <code>&lt;dd&gt;</code>
+              <span class="tag-explanation"
+                >Description details</span
+              >
+              <p class="tag-description">
+                Provides the description or definition in a
+                description list.
+              </p>
+              <p class="use-case">
+                Use within a &lt;dl&gt; to provide the
+                description for the preceding &lt;dt&gt;.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Semantic Elements</h2>
+          <ul>
+            <li>
+              <code>&lt;header&gt;</code>
+              <span class="tag-explanation"
+                >Header of a section or page</span
+              >
+              <p class="tag-description">
+                Represents introductory content, typically a
+                group of introductory or navigational aids.
+              </p>
+              <p class="use-case">
+                Use for a container of introductory content
+                or a set of navigational links.
+              </p>
+            </li>
+            <li>
+              <code>&lt;nav&gt;</code>
+              <span class="tag-explanation"
+                >Navigation links</span
+              >
+              <p class="tag-description">
+                Represents a section of a page that contains
+                navigation links.
+              </p>
+              <p class="use-case">
+                Use for the main navigation menu of a
+                website or for a table of contents.
+              </p>
+            </li>
+            <li>
+              <code>&lt;main&gt;</code>
+              <span class="tag-explanation"
+                >Main content of the page</span
+              >
+              <p class="tag-description">
+                Represents the dominant content of the body
+                of a document.
+              </p>
+              <p class="use-case">
+                Use to encapsulate the primary content of
+                your web page. There should be only one
+                &lt;main&gt; element per page.
+              </p>
+            </li>
+            <li>
+              <code>&lt;article&gt;</code>
+              <span class="tag-explanation"
+                >Self-contained content</span
+              >
+              <p class="tag-description">
+                Represents a self-contained composition in a
+                document, which is intended to be
+                independently distributable or reusable.
+              </p>
+              <p class="use-case">
+                Use for blog posts, news articles, product
+                cards, or any content that can stand alone.
+              </p>
+            </li>
+            <li>
+              <code>&lt;section&gt;</code>
+              <span class="tag-explanation"
+                >Thematic grouping of content</span
+              >
+              <p class="tag-description">
+                Represents a standalone section of a
+                document, which doesn't have a more specific
+                semantic element to represent it.
+              </p>
+              <p class="use-case">
+                Use to divide content into sections, such as
+                chapters, tabbed content, or themed groups
+                of content.
+              </p>
+            </li>
+            <li>
+              <code>&lt;aside&gt;</code>
+              <span class="tag-explanation"
+                >Sidebar content</span
+              >
+              <p class="tag-description">
+                Represents a portion of a document whose
+                content is only indirectly related to the
+                document's main content.
+              </p>
+              <p class="use-case">
+                Use for sidebars, call-out boxes, or any
+                content that is tangentially related to the
+                main content.
+              </p>
+            </li>
+            <li>
+              <code>&lt;footer&gt;</code>
+              <span class="tag-explanation"
+                >Footer of a section or page</span
+              >
+              <p class="tag-description">
+                Represents a footer for its nearest
+                sectioning content or sectioning root
+                element.
+              </p>
+              <p class="use-case">
+                Use for footer content such as copyright
+                information, related documents, or author
+                bios.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Tables</h2>
+          <ul>
+            <li>
+              <code>&lt;table&gt;</code>
+              <span class="tag-explanation">Table</span>
+              <p class="tag-description">
+                Represents tabular data.
+              </p>
+              <p class="use-case">
+                Use to display data in rows and columns.
+                Avoid using tables for layout purposes.
+              </p>
+            </li>
+            <li>
+              <code>&lt;tr&gt;</code>
+              <span class="tag-explanation">Table row</span>
+              <p class="tag-description">
+                Defines a row of cells in a table.
+              </p>
+              <p class="use-case">
+                Use within a &lt;table&gt; to create a
+                horizontal row of cells.
+              </p>
+            </li>
+            <li>
+              <code>&lt;th&gt;</code>
+              <span class="tag-explanation"
+                >Table header cell</span
+              >
+              <p class="tag-description">
+                Defines a header cell in a table.
+              </p>
+              <p class="use-case">
+                Use for column or row headers to provide
+                context for the data in the table.
+              </p>
+            </li>
+            <li>
+              <code>&lt;td&gt;</code>
+              <span class="tag-explanation"
+                >Table data cell</span
+              >
+              <p class="tag-description">
+                Defines a cell of a table that contains
+                data.
+              </p>
+              <p class="use-case">
+                Use for the actual data content within a
+                table.
+              </p>
+            </li>
+            <li>
+              <code>&lt;thead&gt;</code>
+              <span class="tag-explanation"
+                >Table head</span
+              >
+              <p class="tag-description">
+                Defines a set of rows defining the head of
+                the columns of the table.
+              </p>
+              <p class="use-case">
+                Use to group header content in a table,
+                typically the first row with column names.
+              </p>
+            </li>
+            <li>
+              <code>&lt;tbody&gt;</code>
+              <span class="tag-explanation"
+                >Table body</span
+              >
+              <p class="tag-description">
+                Encapsulates a set of table rows, indicating
+                that they comprise the body of the table.
+              </p>
+              <p class="use-case">
+                Use to group the main content of a table,
+                separating it from headers and footers.
+              </p>
+            </li>
+            <li>
+              <code>&lt;tfoot&gt;</code>
+              <span class="tag-explanation"
+                >Table footer</span
+              >
+              <p class="tag-description">
+                Defines a set of rows summarizing the
+                columns of the table.
+              </p>
+              <p class="use-case">
+                Use for footer content in a table, such as
+                totals or summary information.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Forms</h2>
+          <ul>
+            <li>
+              <code>&lt;form&gt;</code>
+              <span class="tag-explanation">Form</span>
+              <p class="tag-description">
+                Represents a document section containing
+                interactive controls for submitting
+                information.
+              </p>
+              <p class="use-case">
+                Use to create a form for user input, such as
+                login forms, search bars, or data submission
+                forms.
+              </p>
+            </li>
+            <li>
+              <code>&lt;input&gt;</code>
+              <span class="tag-explanation"
+                >Input field</span
+              >
+              <p class="tag-description">
+                Creates interactive controls for web-based
+                forms to accept data from the user.
+              </p>
+              <p class="use-case">
+                Use for various types of user input,
+                including text, passwords, numbers,
+                checkboxes, and radio buttons.
+              </p>
+            </li>
+            <li>
+              <code>&lt;textarea&gt;</code>
+              <span class="tag-explanation"
+                >Multiline text input</span
+              >
+              <p class="tag-description">
+                Represents a multi-line plain-text editing
+                control.
+              </p>
+              <p class="use-case">
+                Use when you need to collect larger amounts
+                of text from users, such as comments or
+                messages.
+              </p>
+            </li>
+            <li>
+              <code>&lt;button&gt;</code>
+              <span class="tag-explanation"
+                >Clickable button</span
+              >
+              <p class="tag-description">
+                Represents a clickable button.
+              </p>
+              <p class="use-case">
+                Use for form submissions, triggering
+                JavaScript events, or any clickable action
+                on a web page.
+              </p>
+            </li>
+            <li>
+              <code>&lt;select&gt;</code>
+              <span class="tag-explanation"
+                >Drop-down list</span
+              >
+              <p class="tag-description">
+                Represents a control that provides a menu of
+                options.
+              </p>
+              <p class="use-case">
+                Use when you want users to select one or
+                multiple options from a list, such as
+                choosing a country or category.
+              </p>
+            </li>
+            <li>
+              <code>&lt;option&gt;</code>
+              <span class="tag-explanation"
+                >Option in a select element</span
+              >
+              <p class="tag-description">
+                Defines an option in a select element.
+              </p>
+              <p class="use-case">
+                Use within a &lt;select&gt; element to
+                define the available choices for the user.
+              </p>
+            </li>
+            <li>
+              <code>&lt;label&gt;</code>
+              <span class="tag-explanation"
+                >Label for an input</span
+              >
+              <p class="tag-description">
+                Represents a caption for an item in a user
+                interface.
+              </p>
+              <p class="use-case">
+                Use to provide a text label for form
+                controls, improving accessibility and
+                usability.
+              </p>
+            </li>
+            <li>
+              <code>&lt;fieldset&gt;</code>
+              <span class="tag-explanation"
+                >Group of form controls</span
+              >
+              <p class="tag-description">
+                Groups several controls as well as labels
+                within a web form.
+              </p>
+              <p class="use-case">
+                Use to organize related form controls into
+                logical groups, such as personal information
+                or shipping details.
+              </p>
+            </li>
+            <li>
+              <code>&lt;legend&gt;</code>
+              <span class="tag-explanation"
+                >Caption for a fieldset</span
+              >
+              <p class="tag-description">
+                Represents a caption for the content of its
+                parent &lt;fieldset&gt;.
+              </p>
+              <p class="use-case">
+                Use to provide a title or explanatory
+                caption for a &lt;fieldset&gt;.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Metadata and Document-level Elements</h2>
+          <ul>
+            <li>
+              <code>&lt;meta&gt;</code>
+              <span class="tag-explanation">Metadata</span>
+              <p class="tag-description">
+                Defines metadata about an HTML document.
+              </p>
+              <p class="use-case">
+                Use to specify character encoding, page
+                description, keywords, author, and other
+                metadata.
+              </p>
+            </li>
+            <li>
+              <code>&lt;link&gt;</code>
+              <span class="tag-explanation"
+                >Link to external resource</span
+              >
+              <p class="tag-description">
+                Specifies relationships between the current
+                document and an external resource.
+              </p>
+              <p class="use-case">
+                Use to link to external stylesheets, define
+                favicon, or establish relationships with
+                other pages.
+              </p>
+            </li>
+            <li>
+              <code>&lt;style&gt;</code>
+              <span class="tag-explanation"
+                >Embedded CSS styles</span
+              >
+              <p class="tag-description">
+                Contains style information for a document or
+                part of a document.
+              </p>
+              <p class="use-case">
+                Use to define CSS styles directly within an
+                HTML document, though external stylesheets
+                are generally preferred.
+              </p>
+            </li>
+            <li>
+              <code>&lt;script&gt;</code>
+              <span class="tag-explanation"
+                >Embedded or external JavaScript</span
+              >
+              <p class="tag-description">
+                Used to embed or reference executable code,
+                typically JavaScript.
+              </p>
+              <p class="use-case">
+                Use to include JavaScript directly in the
+                document or to reference external script
+                files.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Text Formatting</h2>
+          <ul>
+            <li>
+              <code>&lt;span&gt;</code>
+              <span class="tag-explanation"
+                >Inline container</span
+              >
+              <p class="tag-description">
+                Generic inline container for phrasing
+                content.
+              </p>
+              <p class="use-case">
+                Use to apply styles to a specific portion of
+                text or to group inline elements for
+                scripting purposes.
+              </p>
+            </li>
+            <li>
+              <code>&lt;pre&gt;</code>
+              <span class="tag-explanation"
+                >Preformatted text</span
+              >
+              <p class="tag-description">
+                Represents preformatted text which is to be
+                presented exactly as written in the HTML
+                file.
+              </p>
+              <p class="use-case">
+                Use for displaying code blocks, ASCII art,
+                or any text where whitespace and formatting
+                should be preserved.
+              </p>
+            </li>
+            <li>
+              <code>&lt;code&gt;</code>
+              <span class="tag-explanation"
+                >Code snippet</span
+              >
+              <p class="tag-description">
+                Displays its contents styled in a fashion
+                intended to indicate that the text is a
+                short fragment of computer code.
+              </p>
+              <p class="use-case">
+                Use for marking up inline code snippets or
+                references to code elements like variable
+                names or file names.
+              </p>
+            </li>
+            <li>
+              <code>&lt;blockquote&gt;</code>
+              <span class="tag-explanation"
+                >Block quotation</span
+              >
+              <p class="tag-description">
+                Indicates that the enclosed text is an
+                extended quotation.
+              </p>
+              <p class="use-case">
+                Use for long quotations that are set off
+                from the main text, often with indentation.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <p><a href="/">Back to Home</a></p>
+      </footer>
+    </div>
   </body>
 </html>

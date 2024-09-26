@@ -1,3 +1,8 @@
+## 2024-09-26
+
+- Add meta tags and update layout for HTML cheat sheet; create cheatsheet.css.
+
+
 ## 2024-09-25
 
 - Update contact email in README.md
